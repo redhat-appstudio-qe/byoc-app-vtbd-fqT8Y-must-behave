@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: esnd
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-sais-tenant/byoc-app-vtbd/esnd@sha256:74fa539b13709b1866c491d56ff25c0823ebb200963c271bad7276365df850a0
         name: my-java-quarkus
         ports:
         - containerPort: 8081
