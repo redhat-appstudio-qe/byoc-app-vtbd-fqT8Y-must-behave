@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: esnd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-sais-tenant/byoc-app-vtbd/esnd@sha256:74fa539b13709b1866c491d56ff25c0823ebb200963c271bad7276365df850a0
+        name: my-java-quarkus
+        resources: {}
+status: {}

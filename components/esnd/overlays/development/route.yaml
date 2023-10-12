@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: esnd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: esnd
+    app.kubernetes.io/part-of: byoc-app-vtbd
+  name: esnd8hcw
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: esnd
+    weight: null
+status: {}
